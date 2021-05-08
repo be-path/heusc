@@ -1,0 +1,1401 @@
+{
+  "preset_info": {
+    "version": 11,
+    "title": "HEUSC",
+    "description": "Balance:UNLIMITED",
+    "author": "Nal",
+    "width": 540,
+    "height": 1110,
+    "features": "MUSIC",
+    "release": 354106811,
+    "locked": false,
+    "pflags": 0
+  },
+  "preset_root": {
+    "internal_type": "RootLayerModule",
+    "globals_list": {
+      "c01": {
+        "index": 1,
+        "type": "COLOR",
+        "title": "c01",
+        "value": "#FF6FD5D8",
+        "toggles": 10,
+        "global_formula": "$if(gv(sdark), gv(cdark01), gv(clight01))$"
+      },
+      "c02": {
+        "index": 2,
+        "type": "COLOR",
+        "title": "c02",
+        "value": "#FF000000",
+        "toggles": 10,
+        "global_formula": "$if(gv(sdark), gv(cdark02), gv(clight02))$"
+      },
+      "cdark01": {
+        "index": 3,
+        "type": "COLOR",
+        "title": "cDark01",
+        "value": "#FF6FD5D8"
+      },
+      "cdark02": {
+        "index": 4,
+        "type": "COLOR",
+        "title": "cDark02",
+        "value": "#FF000000"
+      },
+      "clight01": {
+        "index": 5,
+        "type": "COLOR",
+        "title": "cLight01",
+        "value": "#FF4AD7DB"
+      },
+      "clight02": {
+        "index": 6,
+        "type": "COLOR",
+        "title": "cLight02",
+        "value": "#FFFFFFFF"
+      },
+      "sdark": {
+        "index": 7,
+        "type": "SWITCH",
+        "title": "sDark",
+        "value": 0
+      }
+    },
+    "viewgroup_items": [
+      {
+        "internal_type": "OverlapLayerModule",
+        "internal_title": "背景",
+        "viewgroup_items": [
+          {
+            "internal_toggles": {
+              "shape_width": 10,
+              "shape_height": 10,
+              "paint_color": 100
+            },
+            "internal_formulas": {
+              "shape_width": "$si(rwidth)$",
+              "shape_height": "$si(rheight)$"
+            },
+            "internal_type": "ShapeModule",
+            "shape_type": "RECT",
+            "internal_globals": {
+              "paint_color": "c02"
+            }
+          }
+        ]
+      },
+      {
+        "internal_type": "OverlapLayerModule",
+        "position_anchor": "CENTER",
+        "internal_title": "ベース",
+        "viewgroup_items": [
+          {
+            "internal_type": "ShapeModule",
+            "shape_type": "CIRCLE",
+            "shape_width": 300.0,
+            "paint_color": "#FF6FD5D8",
+            "internal_toggles": {
+              "paint_color": 100
+            },
+            "internal_globals": {
+              "paint_color": "c01"
+            },
+            "internal_events": [
+              {
+                "type": "SINGLE_TAP",
+                "action": "KUSTOM_ACTION"
+              }
+            ]
+          },
+          {
+            "internal_type": "ShapeModule",
+            "shape_type": "RECT",
+            "shape_width": 50.0,
+            "shape_height": 10.0,
+            "position_padding_bottom": 20.0,
+            "internal_toggles": {
+              "paint_color": 100
+            },
+            "internal_globals": {
+              "paint_color": "c02"
+            }
+          },
+          {
+            "internal_type": "ShapeModule",
+            "shape_type": "RECT",
+            "shape_width": 50.0,
+            "shape_height": 10.0,
+            "position_padding_top": 20.0,
+            "internal_toggles": {
+              "paint_color": 100
+            },
+            "internal_globals": {
+              "paint_color": "c02"
+            }
+          },
+          {
+            "internal_type": "ShapeModule",
+            "shape_type": "RECT",
+            "shape_width": 10.0,
+            "shape_height": 30.0,
+            "position_padding_right": 80.0,
+            "internal_toggles": {
+              "paint_color": 100
+            },
+            "internal_globals": {
+              "paint_color": "c02"
+            }
+          },
+          {
+            "internal_type": "ShapeModule",
+            "shape_type": "RECT",
+            "shape_width": 10.0,
+            "shape_height": 30.0,
+            "position_padding_left": 80.0,
+            "internal_toggles": {
+              "paint_color": 100
+            },
+            "internal_globals": {
+              "paint_color": "c02"
+            }
+          }
+        ]
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": -40.0,
+        "position_offset_y": -20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_BOTTOM",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 7,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 12,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 17,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 22,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 27,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 31,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 40,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 45,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 50,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 54,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 59,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 64,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 69,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 74,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 79,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT",
+            "internal_toggles": {
+              "type": 0,
+              "action": 0
+            },
+            "internal_formulas": {
+              "type": "$if(mi(state)=PLAYING, VISUALIZER, LOOP_2W)$",
+              "action": "$if(mi(state)=PLAYING, SCALE_Y, ADVANCED)$"
+            },
+            "speed": 1,
+            "vbaridx": 0.0,
+            "vbars": "BARS_8",
+            "delay": 0.0
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100,
+          "shape_height": 10
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_formulas": {
+          "shape_height": "$if(mi(state)=PLAYING, 100, 10)$"
+        },
+        "internal_title": "00"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": -20.0,
+        "position_offset_y": -20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_BOTTOM",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 15,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 20,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 30,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 40,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 45,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 50,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 55,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 60,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 65,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 70,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 75,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 80,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT",
+            "vbaridx": 0.0,
+            "angle": 0
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "01"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": 20.0,
+        "position_offset_y": -20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_BOTTOM",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 6,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 11,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 16,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 21,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 26,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 31,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 36,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 42,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 47,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 52,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 57,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 61,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 66,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 70,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 74,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 79,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 83,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT",
+            "delay": 0.0
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "02"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": 40.0,
+        "position_offset_y": -20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_BOTTOM",
+            "animator": [
+              {
+                "position": 0,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 15,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 20,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 30,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 40,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 45,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 50,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 56,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 61,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 66,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 71,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 76,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 80,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT"
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "03"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": -40.0,
+        "position_offset_y": 20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_TOP",
+            "animator": [
+              {
+                "position": 0,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 15,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 20,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 31,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 36,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 41,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 46,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 50,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 56,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 60,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 65,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 70,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 75,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 80,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT"
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "04"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": -20.0,
+        "position_offset_y": 20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_TOP",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 14,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 19,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 29,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 40,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 45,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 51,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 57,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 62,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 67,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 71,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 76,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 81,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 86,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 91,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 96,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT"
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "05"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": 20.0,
+        "position_offset_y": 20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_TOP",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 15,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 20,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 30,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 40,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 45,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 50,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 55,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 60,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 65,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 70,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 75,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 80,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 0.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 21.0,
+            "ease": "STRAIGHT"
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "06"
+      },
+      {
+        "internal_type": "ShapeModule",
+        "shape_width": 10.0,
+        "position_offset_x": 40.0,
+        "position_offset_y": 20.0,
+        "position_anchor": "CENTER",
+        "internal_animations": [
+          {
+            "type": "LOOP_2W",
+            "action": "ADVANCED",
+            "anchor": "MODULE_TOP",
+            "animator": [
+              {
+                "position": 0,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 5,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 10,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 15,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 20,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 25,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 30,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 35,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 39,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 44,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 49,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 54,
+                "value": 4.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 59,
+                "value": 5.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 64,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 70,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 75,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 80,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 85,
+                "value": 1.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 90,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 95,
+                "value": 2.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              },
+              {
+                "position": 100,
+                "value": 3.0,
+                "property": "SCALE_Y",
+                "ease": "NORMAL"
+              }
+            ],
+            "amount": 100,
+            "duration": 30.0,
+            "ease": "STRAIGHT"
+          }
+        ],
+        "internal_toggles": {
+          "paint_color": 100
+        },
+        "internal_globals": {
+          "paint_color": "c02"
+        },
+        "internal_title": "07"
+      }
+    ]
+  }
+}
