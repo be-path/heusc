@@ -15,7 +15,7 @@
     "internal_type": "RootLayerModule",
     "globals_list": {
       "c01": {
-        "index": 1,
+        "index": 2,
         "type": "COLOR",
         "title": "c01",
         "value": "#FF6FD5D8",
@@ -23,7 +23,7 @@
         "global_formula": "$if(gv(sdark), gv(cdark01), gv(clight01))$"
       },
       "c02": {
-        "index": 2,
+        "index": 3,
         "type": "COLOR",
         "title": "c02",
         "value": "#FF000000",
@@ -31,31 +31,31 @@
         "global_formula": "$if(gv(sdark), gv(cdark02), gv(clight02))$"
       },
       "cdark01": {
-        "index": 3,
+        "index": 4,
         "type": "COLOR",
         "title": "cDark01",
         "value": "#FF6FD5D8"
       },
       "cdark02": {
-        "index": 4,
+        "index": 5,
         "type": "COLOR",
         "title": "cDark02",
         "value": "#FF000000"
       },
       "clight01": {
-        "index": 5,
+        "index": 6,
         "type": "COLOR",
         "title": "cLight01",
         "value": "#FF4AD7DB"
       },
       "clight02": {
-        "index": 6,
+        "index": 7,
         "type": "COLOR",
         "title": "cLight02",
         "value": "#FFFFFFFF"
       },
       "sdark": {
-        "index": 7,
+        "index": 1,
         "type": "SWITCH",
         "title": "sDark",
         "value": 0
@@ -110,9 +110,9 @@
           {
             "internal_type": "ShapeModule",
             "shape_type": "RECT",
-            "shape_width": 50.0,
-            "shape_height": 10.0,
-            "position_padding_bottom": 20.0,
+            "shape_width": 75.0,
+            "shape_height": 15.0,
+            "position_padding_bottom": 30.0,
             "internal_toggles": {
               "paint_color": 100
             },
@@ -123,9 +123,9 @@
           {
             "internal_type": "ShapeModule",
             "shape_type": "RECT",
-            "shape_width": 50.0,
-            "shape_height": 10.0,
-            "position_padding_top": 20.0,
+            "shape_width": 75.0,
+            "shape_height": 15.0,
+            "position_padding_top": 30.0,
             "internal_toggles": {
               "paint_color": 100
             },
@@ -136,9 +136,9 @@
           {
             "internal_type": "ShapeModule",
             "shape_type": "RECT",
-            "shape_width": 10.0,
-            "shape_height": 30.0,
-            "position_padding_right": 80.0,
+            "shape_width": 15.0,
+            "shape_height": 45.0,
+            "position_padding_right": 120.0,
             "internal_toggles": {
               "paint_color": 100
             },
@@ -149,9 +149,9 @@
           {
             "internal_type": "ShapeModule",
             "shape_type": "RECT",
-            "shape_width": 10.0,
-            "shape_height": 30.0,
-            "position_padding_left": 80.0,
+            "shape_width": 15.0,
+            "shape_height": 45.0,
+            "position_padding_left": 120.0,
             "internal_toggles": {
               "paint_color": 100
             },
@@ -163,9 +163,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": -40.0,
-        "position_offset_y": -20.0,
+        "shape_width": 15.0,
+        "position_offset_x": -60.0,
+        "position_offset_y": -29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -331,9 +331,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": -20.0,
-        "position_offset_y": -20.0,
+        "shape_width": 15.0,
+        "position_offset_x": -30.0,
+        "position_offset_y": -29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -485,9 +485,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": 20.0,
-        "position_offset_y": -20.0,
+        "shape_width": 15.0,
+        "position_offset_x": 30.0,
+        "position_offset_y": -29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -638,9 +638,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": 40.0,
-        "position_offset_y": -20.0,
+        "shape_width": 15.0,
+        "position_offset_x": 60.0,
+        "position_offset_y": -29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -790,9 +790,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": -40.0,
-        "position_offset_y": 20.0,
+        "shape_width": 15.0,
+        "position_offset_x": -60.0,
+        "position_offset_y": 29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -942,9 +942,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": -20.0,
-        "position_offset_y": 20.0,
+        "shape_width": 15.0,
+        "position_offset_x": -30.0,
+        "position_offset_y": 29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -1094,9 +1094,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": 20.0,
-        "position_offset_y": 20.0,
+        "shape_width": 15.0,
+        "position_offset_x": 30.0,
+        "position_offset_y": 29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
@@ -1246,9 +1246,9 @@
       },
       {
         "internal_type": "ShapeModule",
-        "shape_width": 10.0,
-        "position_offset_x": 40.0,
-        "position_offset_y": 20.0,
+        "shape_width": 15.0,
+        "position_offset_x": 60.0,
+        "position_offset_y": 29.0,
         "position_anchor": "CENTER",
         "internal_animations": [
           {
